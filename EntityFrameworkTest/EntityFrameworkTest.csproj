@@ -51,6 +51,7 @@
     <Compile Include="Book.cs" />
     <Compile Include="BookContext.cs" />
     <Compile Include="Category.cs" />
+    <Compile Include="DeleteCategory.cs" />
     <Compile Include="Migrations\201505291900439_InitialCreate.cs" />
     <Compile Include="Migrations\201505291900439_InitialCreate.Designer.cs">
       <DependentUpon>201505291900439_InitialCreate.cs</DependentUpon>

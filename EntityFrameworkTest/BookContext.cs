@@ -19,7 +19,7 @@ namespace EntityFrameworkTest
 
            modelBuilder.Entity<Book>()
                .Property(p => p.PublicationName)
-               .HasColumnName("Publications");
+               .HasColumnName("Pu blications");
        }
     }
 }

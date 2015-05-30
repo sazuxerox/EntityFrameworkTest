@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Data.Entity;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
@@ -15,7 +16,7 @@ namespace EntityFrameworkTest
             using (var db = new BookContext())
             {
 
-                Console.Write("Enter a name for a new Blog: ");
+                Console.WriteLine("Enter a name for a new Category: ");
                 var name = Console.ReadLine();
 
                 var category = new Category { Name = name };
@@ -36,6 +37,9 @@ namespace EntityFrameworkTest
                 Console.WriteLine("Press any key to exit...");
                 Console.ReadKey();
 
+                var DeleteOp = new DeleteCategory();
+                DeleteOp.DeleteCategoryOperation();
+                Console.WriteLine("Delete Operation Completed!");
 
             }
         }
