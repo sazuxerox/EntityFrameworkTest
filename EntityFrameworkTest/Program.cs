@@ -37,8 +37,9 @@ namespace EntityFrameworkTest
                 Console.WriteLine("Press any key to exit...");
                 Console.ReadKey();
 
+                //The 42nd line will delete the record of the category according to the ID
                 var DeleteOp = new DeleteCategory();
-                DeleteOp.DeleteCategoryOperation();
+               // DeleteOp.DeleteCategoryOperation();
                 Console.WriteLine("Delete Operation Completed!");
 
             }
